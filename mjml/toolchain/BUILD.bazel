@@ -1,0 +1,25 @@
+load("@aspect_bazel_lib//lib:directory_path.bzl", "directory_path")
+load("@aspect_rules_js//js:defs.bzl", "js_binary")
+
+package(default_applicable_licenses = ["//:license"])
+
+directory_path(
+    name = "mjml_bin",
+    directory = "//:node_modules/mjml/dir",
+    path = "bin/mjml",
+)
+
+js_binary(
+    name = "mjml",
+    data = ["//:node_modules/mjml"],
+    entry_point = ":mjml_bin",
+    visibility = ["//visibility:public"],
+)
+
+filegroup(
+    name = "distro",
+    srcs = [
+        "BUILD.bazel",
+    ],
+    visibility = ["//distro:__pkg__"],
+)

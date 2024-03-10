@@ -1,0 +1,8 @@
+load("//mjml:defs.bzl", "mjml_library")
+
+package(default_applicable_licenses = ["//:license"])
+
+mjml_library(
+    name = "absolute",
+    srcs = ["//examples/absolute:test.mjml"],
+)

@@ -1,0 +1,46 @@
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ci-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  pkg:
+    name: Packaging Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Basilisk
+        run: go install github.com/bazelbuild/bazelisk@latest
+
+      - name: Test
+        run: bazelisk build //distro:rules_mjml
+
+  e2e:
+    name: E2E Tests
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Basilisk
+        run: go install github.com/bazelbuild/bazelisk@latest
+
+      - name: Test
+        run: cd e2e && bazelisk build //:simple

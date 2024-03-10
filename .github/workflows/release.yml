@@ -1,0 +1,35 @@
+on:
+  push:
+    branches:
+      - main
+
+name: Release
+jobs:
+  release:
+    name: Tag and release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Basilisk
+        run: go install github.com/bazelbuild/bazelisk@latest
+
+      - name: Build package
+        run: bazelisk build //distro:rules_mjml
+
+      - name: Check release
+        id: release
+        uses: google-github-actions/release-please-action@v4
+        with:
+          skip-github-pull-request: true
+
+      - name: Rename package
+        if: ${{ steps.release.outputs.release_created }}
+        run: mv ./bazel-bin/distro/rules_mjml.tar.gz ./bazel-bin/distro/rules_mjml-${{ steps.release.outputs.tag_name }}.tar.gz
+
+      - name: Upload package
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh release upload ${{ steps.release.outputs.tag_name }} ./bazel-bin/distro/rules_mjml-${{ steps.release.outputs.tag_name }}.tar.gz

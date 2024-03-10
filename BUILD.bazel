@@ -1,0 +1,25 @@
+load("@mjml_toolchain//:defs.bzl", "npm_link_all_packages")
+load("@rules_license//rules:license.bzl", "license")
+
+package(default_applicable_licenses = [":license"])
+
+npm_link_all_packages()
+
+license(
+    name = "license",
+    license_kinds = [
+        "@rules_license//licenses/spdx:Apache-2.0",
+    ],
+    license_text = "LICENSE",
+)
+
+filegroup(
+    name = "distro",
+    srcs = [
+        "BUILD.bazel",
+        "LICENSE",
+        "MODULE.bazel",
+        "WORKSPACE",
+    ],
+    visibility = ["//distro:__pkg__"],
+)

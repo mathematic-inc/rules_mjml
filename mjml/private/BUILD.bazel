@@ -1,0 +1,10 @@
+package(default_applicable_licenses = ["//:license"])
+
+filegroup(
+    name = "distro",
+    srcs = [
+        "BUILD.bazel",
+        "mjml_library.bzl",
+    ],
+    visibility = ["//distro:__pkg__"],
+)
