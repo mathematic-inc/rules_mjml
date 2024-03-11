@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "packageRules": [
+    {
+      "matchManagers": ["bazel-module", "github-actions", "npm"],
+      "groupName": "{{manager}}"
+    }
+  ]
+}
