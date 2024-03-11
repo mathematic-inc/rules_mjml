@@ -16,10 +16,12 @@ license(
 filegroup(
     name = "distro",
     srcs = [
+        ".bazelignore",
         "BUILD.bazel",
         "LICENSE",
         "MODULE.bazel",
         "WORKSPACE",
+        "pnpm-lock.yaml",
     ],
     visibility = ["//distro:__pkg__"],
 )
