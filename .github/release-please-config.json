@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
   "release-type": "bazel",
   "include-component-in-tag": false,
   "bump-minor-pre-major": true,

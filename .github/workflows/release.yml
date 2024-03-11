@@ -23,6 +23,8 @@ jobs:
         uses: google-github-actions/release-please-action@v4
         with:
           skip-github-pull-request: true
+          config-file: .github/release-please-config.json
+          manifest-file: .github/.release-please-manifest.json
 
       - name: Rename package
         if: ${{ steps.release.outputs.release_created }}
