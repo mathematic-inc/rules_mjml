@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.2](https://github.com/mathematic-inc/rules_mjml/compare/v0.2.1...v0.2.2) (2024-03-12)
+
+
+### Bug Fixes
+
+* only use `copy_files_to_bin_actions` on source files ([d2723ad](https://github.com/mathematic-inc/rules_mjml/commit/d2723add3bbb317359846c9a7362b909bd81179a))
+* remove `copy_files_to_bin_actions` for `_mjml_binary_impl` ([368fcd8](https://github.com/mathematic-inc/rules_mjml/commit/368fcd8b3b57d19a7d213abcb1e04cb475e8e7af))
+* use `copy_files_to_bin_actions` for `mjml_library` ([4620073](https://github.com/mathematic-inc/rules_mjml/commit/462007344cc7e92284410234f454afb6aea7b21b))
+
 ## [0.2.1](https://github.com/mathematic-inc/rules_mjml/compare/v0.2.0...v0.2.1) (2024-03-12)
 
 
