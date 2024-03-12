@@ -13,20 +13,30 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  pkg:
-    name: Packaging Test
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up Basilisk
-        run: go install github.com/bazelbuild/bazelisk@latest
+      - name: Mount Bazel cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/bazel
+          key: bazel
 
-      - name: Test
-        run: bazelisk build //distro:rules_mjml
+      - name: Build
+        run: bazel build //distro:rules_mjml
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: rules_mjml
+          path: bazel-bin/distro/rules_mjml.tar.gz
 
   e2e:
+    needs: build
     name: E2E Tests
     runs-on: ${{ matrix.os }}
     strategy:
@@ -36,11 +46,13 @@ jobs:
           - ubuntu-latest
           - macos-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: rules_mjml
 
-      - name: Set up Basilisk
-        run: go install github.com/bazelbuild/bazelisk@latest
+      - name: Extract artifacts
+        run: tar -xzf rules_mjml.tar.gz
 
       - name: Test
-        run: cd e2e && bazelisk build //:simple
+        run: cd e2e && bazel build //:simple
