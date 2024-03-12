@@ -1,0 +1,31 @@
+load("//mjml:defs.bzl", "mjml_binary")
+load("@bazel_skylib//rules:write_file.bzl", "write_file")
+
+package(default_applicable_licenses = ["//:license"])
+
+mjml_binary(
+    name = "generated",
+    srcs = [":generated_files"],
+)
+
+write_file(
+    name = "generated_mjml",
+    out = "generated.mjml",
+    content = [
+        "<mjml><mj-body></mj-body></mjml>",
+    ],
+)
+
+write_file(
+    name = "generated_mjml_map",
+    out = "generated.mjml.map",
+    content = [],
+)
+
+filegroup(
+    name = "generated_files",
+    srcs = [
+        ":generated_mjml",
+        ":generated_mjml_map",
+    ],
+)

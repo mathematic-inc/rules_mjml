@@ -1,15 +1,15 @@
-load("@rules_mjml//mjml:defs.bzl", "mjml_library")
+load("@rules_mjml//mjml:defs.bzl", "mjml_binary")
 load("@bazel_skylib//rules:diff_test.bzl", "diff_test")
 
-mjml_library(
+mjml_binary(
     name = "simple",
-    srcs = ["test.mjml"],
+    srcs = ["simple.mjml"],
 )
 
 diff_test(
     name = "simple_test",
     file1 = ":simple",
-    file2 = "test-expected.html",
+    file2 = "simple-expected.html",
 )
 
 filegroup(
@@ -18,8 +18,8 @@ filegroup(
         "BUILD.bazel",
         "MODULE.bazel",
         "MODULE.bazel.lock",
-        "test.mjml",
-        "test-expected.html",
+        "simple.mjml",
+        "simple-expected.html",
     ],
     visibility = ["//distro:__pkg__"],
 )

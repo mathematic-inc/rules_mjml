@@ -1,0 +1,9 @@
+<mjml>
+  <mj-head>
+    <mj-include path="./styles.css" type="css" />
+    <mj-include path="./styles-inline.css" type="css" css-inline="inline" />
+  </mj-head>
+  <mj-body css-class="blue-text">
+    <mj-include path="./header.mjml" />
+  </mj-body>
+</mjml>

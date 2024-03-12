@@ -1,8 +1,8 @@
-load("//mjml:defs.bzl", "mjml_library")
+load("//mjml:defs.bzl", "mjml_binary")
 
 package(default_applicable_licenses = ["//:license"])
 
-mjml_library(
+mjml_binary(
     name = "absolute",
-    srcs = ["//examples/absolute:test.mjml"],
+    srcs = ["//examples/absolute:absolute.mjml"],
 )

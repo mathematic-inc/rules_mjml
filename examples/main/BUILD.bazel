@@ -3,6 +3,7 @@ load("//mjml:defs.bzl", "mjml_binary")
 package(default_applicable_licenses = ["//:license"])
 
 mjml_binary(
-    name = "simple",
-    srcs = ["simple.mjml"],
+    name = "main",
+    srcs = ["other.mjml"],
+    main = "other.mjml",
 )

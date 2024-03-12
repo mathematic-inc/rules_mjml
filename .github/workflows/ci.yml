@@ -27,7 +27,7 @@ jobs:
           key: bazel
 
       - name: Build
-        run: bazel build //distro:rules_mjml
+        run: bazel build //...
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4

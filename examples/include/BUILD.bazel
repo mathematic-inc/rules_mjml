@@ -1,0 +1,18 @@
+load("//mjml:defs.bzl", "mjml_binary", "mjml_library")
+
+package(default_applicable_licenses = ["//:license"])
+
+mjml_binary(
+    name = "main",
+    srcs = [
+        "main.mjml",
+        "styles.css",
+        "styles-inline.css",
+    ],
+    deps = [":header"],
+)
+
+mjml_library(
+    name = "header",
+    srcs = ["header.mjml"],
+)
