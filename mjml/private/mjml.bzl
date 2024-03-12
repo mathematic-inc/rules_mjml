@@ -19,11 +19,10 @@ COMMON_ATTRS = {
 }
 
 def _mjml_library_impl(ctx):
-    files = [] + ctx.files.srcs
+    files = [] + copy_files_to_bin_actions(ctx = ctx, files = ctx.files.srcs)
     for dep in ctx.attr.deps:
         files += dep[MjmlInfo].files
 
-    files = copy_files_to_bin_actions(ctx = ctx, files = files)
     return [
         MjmlInfo(files = files),
         DefaultInfo(files = depset(ctx.files.srcs)),
