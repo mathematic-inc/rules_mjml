@@ -4,7 +4,7 @@ filegroup(
     name = "distro",
     srcs = [
         "BUILD.bazel",
-        "mjml_library.bzl",
+        "mjml.bzl",
     ],
     visibility = ["//distro:__pkg__"],
 )

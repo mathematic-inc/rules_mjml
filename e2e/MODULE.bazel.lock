@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 6,
-  "moduleFileHash": "c978feae1ebed96d32970c40878fc4480c5132877629862c73f6f663ceaae046",
+  "moduleFileHash": "c56586282a8f8203fcefed42c72eddc3357cdd9baaea4b44cc690187b8792c32",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -14,14 +14,14 @@
   },
   "localOverrideHashes": {
     "bazel_tools": "1ae69322ac3823527337acf02016e8ee95813d8d356f47060255b8956fa642f0",
-    "rules_mjml": "ec79e969e2cb15247cc0c514514906e89fddbc4feda34cd41ef9c8c69f6654eb"
+    "rules_mjml": "db4ba7a486ca9707ea42a25cfdf14c93338cf45f8f5358f4720a955c31f9e942"
   },
   "moduleDepGraph": {
     "<root>": {
-      "name": "mjml_library",
+      "name": "mjml_binary",
       "version": "0.0.0",
       "key": "<root>",
-      "repoName": "mjml_library",
+      "repoName": "mjml_binary",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [],
       "extensionUsages": [],
@@ -34,7 +34,7 @@
     },
     "rules_mjml@_": {
       "name": "rules_mjml",
-      "version": "0.1.3",
+      "version": "0.1.0",
       "key": "rules_mjml@_",
       "repoName": "rules_mjml",
       "executionPlatformsToRegister": [],
@@ -46,7 +46,7 @@
           "usingModule": "rules_mjml@_",
           "location": {
             "file": "@@rules_mjml~//:MODULE.bazel",
-            "line": 12,
+            "line": 13,
             "column": 21
           },
           "imports": {},
@@ -58,7 +58,7 @@
               "devDependency": false,
               "location": {
                 "file": "@@rules_mjml~//:MODULE.bazel",
-                "line": 13,
+                "line": 14,
                 "column": 15
               }
             }
@@ -72,7 +72,7 @@
           "usingModule": "rules_mjml@_",
           "location": {
             "file": "@@rules_mjml~//:MODULE.bazel",
-            "line": 15,
+            "line": 16,
             "column": 20
           },
           "imports": {
@@ -90,7 +90,7 @@
               "devDependency": false,
               "location": {
                 "file": "@@rules_mjml~//:MODULE.bazel",
-                "line": 16,
+                "line": 17,
                 "column": 23
               }
             }
@@ -100,12 +100,11 @@
         }
       ],
       "deps": {
-        "aspect_bazel_lib": "aspect_bazel_lib@2.2.0",
-        "aspect_rules_js": "aspect_rules_js@1.35.0",
+        "aspect_bazel_lib": "aspect_bazel_lib@2.5.3",
+        "aspect_rules_js": "aspect_rules_js@1.38.0",
         "bazel_skylib": "bazel_skylib@1.5.0",
         "rules_license": "rules_license@0.0.8",
         "rules_nodejs": "rules_nodejs@6.0.5",
-        "rules_pkg": "rules_pkg@0.10.1",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       }
@@ -122,7 +121,7 @@
       ],
       "extensionUsages": [],
       "deps": {
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       },
@@ -283,9 +282,9 @@
         "rules_java": "rules_java@7.4.0",
         "rules_license": "rules_license@0.0.8",
         "rules_proto": "rules_proto@5.3.0-21.7",
-        "rules_python": "rules_python@0.24.0",
+        "rules_python": "rules_python@0.22.1",
         "buildozer": "buildozer@6.4.0.2",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "com_google_protobuf": "protobuf@21.7",
         "zlib": "zlib@1.3",
         "build_bazel_apple_support": "apple_support@1.5.0",
@@ -301,14 +300,14 @@
       "toolchainsToRegister": [],
       "extensionUsages": [],
       "deps": {
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_tools": "bazel_tools@_"
       }
     },
-    "aspect_bazel_lib@2.2.0": {
+    "aspect_bazel_lib@2.5.3": {
       "name": "aspect_bazel_lib",
-      "version": "2.2.0",
-      "key": "aspect_bazel_lib@2.2.0",
+      "version": "2.5.3",
+      "key": "aspect_bazel_lib@2.5.3",
       "repoName": "aspect_bazel_lib",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [
@@ -328,9 +327,9 @@
         {
           "extensionBzlFile": "@aspect_bazel_lib//lib:extensions.bzl",
           "extensionName": "toolchains",
-          "usingModule": "aspect_bazel_lib@2.2.0",
+          "usingModule": "aspect_bazel_lib@2.5.3",
           "location": {
-            "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+            "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
             "line": 17,
             "column": 37
           },
@@ -351,7 +350,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
                 "line": 18,
                 "column": 36
               }
@@ -361,7 +360,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
                 "line": 19,
                 "column": 39
               }
@@ -371,7 +370,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
                 "line": 20,
                 "column": 24
               }
@@ -381,7 +380,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
                 "line": 21,
                 "column": 24
               }
@@ -391,7 +390,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
                 "line": 22,
                 "column": 31
               }
@@ -401,7 +400,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
                 "line": 23,
                 "column": 25
               }
@@ -411,7 +410,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
                 "line": 24,
                 "column": 37
               }
@@ -421,7 +420,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/MODULE.bazel",
                 "line": 25,
                 "column": 26
               }
@@ -433,7 +432,7 @@
       ],
       "deps": {
         "bazel_skylib": "bazel_skylib@1.5.0",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "io_bazel_stardoc": "stardoc@0.5.4",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
@@ -443,22 +442,22 @@
         "ruleClassName": "http_archive",
         "attributes": {
           "urls": [
-            "https://github.com/aspect-build/bazel-lib/releases/download/v2.2.0/bazel-lib-v2.2.0.tar.gz"
+            "https://github.com/aspect-build/bazel-lib/releases/download/v2.5.3/bazel-lib-v2.5.3.tar.gz"
           ],
-          "integrity": "sha256-jXGleOThtqVK6nWY6/vY/J475dqIH/nSuAJJV3uTOkA=",
-          "strip_prefix": "bazel-lib-2.2.0",
+          "integrity": "sha256-bCXFlYEEHt4x4RdpMEf5csxHAMiaz5E2WNyJ0Ewzj40=",
+          "strip_prefix": "bazel-lib-2.5.3",
           "remote_patches": {
-            "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/patches/go_dev_dep.patch": "sha256-KgABwDzOT+DugUHn9tHLOz05osnk2FLsS10d5zqG/M0=",
-            "https://bcr.bazel.build/modules/aspect_bazel_lib/2.2.0/patches/module_dot_bazel_version.patch": "sha256-cm07naa1qyVVyGpz3hwUd+T0+bH8A4p121T6jn+mImU="
+            "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/patches/go_dev_dep.patch": "sha256-KgABwDzOT+DugUHn9tHLOz05osnk2FLsS10d5zqG/M0=",
+            "https://bcr.bazel.build/modules/aspect_bazel_lib/2.5.3/patches/module_dot_bazel_version.patch": "sha256-lJcPl3qi//Az5K9CO6WnDIL8gtJVzpOWhyailCiKeVY="
           },
           "remote_patch_strip": 1
         }
       }
     },
-    "aspect_rules_js@1.35.0": {
+    "aspect_rules_js@1.38.0": {
       "name": "aspect_rules_js",
-      "version": "1.35.0",
-      "key": "aspect_rules_js@1.35.0",
+      "version": "1.38.0",
+      "key": "aspect_rules_js@1.38.0",
       "repoName": "aspect_rules_js",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [],
@@ -466,19 +465,19 @@
         {
           "extensionBzlFile": "@rules_nodejs//nodejs:extensions.bzl",
           "extensionName": "node",
-          "usingModule": "aspect_rules_js@1.35.0",
+          "usingModule": "aspect_rules_js@1.38.0",
           "location": {
-            "file": "https://bcr.bazel.build/modules/aspect_rules_js/1.35.0/MODULE.bazel",
+            "file": "https://bcr.bazel.build/modules/aspect_rules_js/1.38.0/MODULE.bazel",
             "line": 18,
             "column": 21
           },
           "imports": {
-            "nodejs_linux_amd64": "nodejs_linux_amd64",
-            "nodejs_darwin_arm64": "nodejs_darwin_arm64",
             "nodejs_darwin_amd64": "nodejs_darwin_amd64",
+            "nodejs_darwin_arm64": "nodejs_darwin_arm64",
+            "nodejs_linux_amd64": "nodejs_linux_amd64",
             "nodejs_linux_arm64": "nodejs_linux_arm64",
-            "nodejs_linux_s390x": "nodejs_linux_s390x",
             "nodejs_linux_ppc64le": "nodejs_linux_ppc64le",
+            "nodejs_linux_s390x": "nodejs_linux_s390x",
             "nodejs_windows_amd64": "nodejs_windows_amd64"
           },
           "devImports": [],
@@ -489,9 +488,9 @@
         {
           "extensionBzlFile": "@aspect_rules_js//npm:extensions.bzl",
           "extensionName": "pnpm",
-          "usingModule": "aspect_rules_js@1.35.0",
+          "usingModule": "aspect_rules_js@1.38.0",
           "location": {
-            "file": "https://bcr.bazel.build/modules/aspect_rules_js/1.35.0/MODULE.bazel",
+            "file": "https://bcr.bazel.build/modules/aspect_rules_js/1.38.0/MODULE.bazel",
             "line": 27,
             "column": 21
           },
@@ -510,7 +509,7 @@
               },
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/aspect_rules_js/1.35.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/aspect_rules_js/1.38.0/MODULE.bazel",
                 "line": 28,
                 "column": 10
               }
@@ -522,14 +521,21 @@
         {
           "extensionBzlFile": "@aspect_bazel_lib//lib:extensions.bzl",
           "extensionName": "toolchains",
-          "usingModule": "aspect_rules_js@1.35.0",
+          "usingModule": "aspect_rules_js@1.38.0",
           "location": {
-            "file": "https://bcr.bazel.build/modules/aspect_rules_js/1.35.0/MODULE.bazel",
-            "line": 50,
+            "file": "https://bcr.bazel.build/modules/aspect_rules_js/1.38.0/MODULE.bazel",
+            "line": 35,
             "column": 37
           },
           "imports": {
-            "coreutils_toolchains": "coreutils_toolchains"
+            "coreutils_toolchains": "coreutils_toolchains",
+            "yq_darwin_amd64": "yq_darwin_amd64",
+            "yq_darwin_arm64": "yq_darwin_arm64",
+            "yq_linux_amd64": "yq_linux_amd64",
+            "yq_linux_arm64": "yq_linux_arm64",
+            "yq_linux_ppc64le": "yq_linux_ppc64le",
+            "yq_linux_s390x": "yq_linux_s390x",
+            "yq_windows_amd64": "yq_windows_amd64"
           },
           "devImports": [],
           "tags": [],
@@ -538,12 +544,12 @@
         }
       ],
       "deps": {
-        "aspect_bazel_lib": "aspect_bazel_lib@2.2.0",
-        "aspect_rules_lint": "aspect_rules_lint@0.7.0",
+        "aspect_bazel_lib": "aspect_bazel_lib@2.5.3",
+        "aspect_rules_lint": "aspect_rules_lint@0.9.1",
         "bazel_features": "bazel_features@0.1.0",
         "bazel_skylib": "bazel_skylib@1.5.0",
         "rules_nodejs": "rules_nodejs@6.0.5",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       },
@@ -552,12 +558,12 @@
         "ruleClassName": "http_archive",
         "attributes": {
           "urls": [
-            "https://github.com/aspect-build/rules_js/releases/download/v1.35.0/rules_js-v1.35.0.tar.gz"
+            "https://github.com/aspect-build/rules_js/releases/download/v1.38.0/rules_js-v1.38.0.tar.gz"
           ],
-          "integrity": "sha256-ovlB4n8C6EUhwtR/1TDGbVfdbW5EtKTxSW/jBIUdjkg=",
-          "strip_prefix": "rules_js-1.35.0",
+          "integrity": "sha256-7cewJVEU+v271ZPqXV/f1UsqYD8zs6SVGJEKxhjhvys=",
+          "strip_prefix": "rules_js-1.38.0",
           "remote_patches": {
-            "https://bcr.bazel.build/modules/aspect_rules_js/1.35.0/patches/module_dot_bazel_version.patch": "sha256-FUneWZQFpMeCWtzNodLD1Q8EE2aOy1cyIwcYF78zbpg="
+            "https://bcr.bazel.build/modules/aspect_rules_js/1.38.0/patches/module_dot_bazel_version.patch": "sha256-tAqZRfOXAplJDTwXVfUiYwinz9Iqug7CeU2aJH0+IqU="
           },
           "remote_patch_strip": 1
         }
@@ -632,7 +638,7 @@
       ],
       "deps": {
         "bazel_skylib": "bazel_skylib@1.5.0",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       },
@@ -652,39 +658,10 @@
         }
       }
     },
-    "rules_pkg@0.10.1": {
-      "name": "rules_pkg",
-      "version": "0.10.1",
-      "key": "rules_pkg@0.10.1",
-      "repoName": "rules_pkg",
-      "executionPlatformsToRegister": [],
-      "toolchainsToRegister": [],
-      "extensionUsages": [],
-      "deps": {
-        "rules_license": "rules_license@0.0.8",
-        "rules_python": "rules_python@0.24.0",
-        "bazel_skylib": "bazel_skylib@1.5.0",
-        "bazel_tools": "bazel_tools@_",
-        "local_config_platform": "local_config_platform@_"
-      },
-      "repoSpec": {
-        "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
-        "ruleClassName": "http_archive",
-        "attributes": {
-          "urls": [
-            "https://github.com/bazelbuild/rules_pkg/releases/download/0.10.1/rules_pkg-0.10.1.tar.gz"
-          ],
-          "integrity": "sha256-0lCSSi7MUXaAj8TCXVz16eeeY0bXnVqxxJPiieci0dA=",
-          "strip_prefix": "",
-          "remote_patches": {},
-          "remote_patch_strip": 0
-        }
-      }
-    },
-    "platforms@0.0.7": {
+    "platforms@0.0.8": {
       "name": "platforms",
-      "version": "0.0.7",
-      "key": "platforms@0.0.7",
+      "version": "0.0.8",
+      "key": "platforms@0.0.8",
       "repoName": "platforms",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [],
@@ -699,9 +676,9 @@
         "ruleClassName": "http_archive",
         "attributes": {
           "urls": [
-            "https://github.com/bazelbuild/platforms/releases/download/0.0.7/platforms-0.0.7.tar.gz"
+            "https://github.com/bazelbuild/platforms/releases/download/0.0.8/platforms-0.0.8.tar.gz"
           ],
-          "integrity": "sha256-OlYcmee9vpFzqmU/1Xn+hJ8djWc5V4CrR3Cx84FDHVE=",
+          "integrity": "sha256-gVBAZgU4ns7LbaB8vLUJ1WN6OrmiS8abEQFTE2fYnXQ=",
           "strip_prefix": "",
           "remote_patches": {},
           "remote_patch_strip": 0
@@ -737,7 +714,7 @@
         }
       ],
       "deps": {
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       },
@@ -835,7 +812,7 @@
         }
       ],
       "deps": {
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "rules_cc": "rules_cc@0.0.9",
         "bazel_skylib": "bazel_skylib@1.5.0",
         "rules_proto": "rules_proto@5.3.0-21.7",
@@ -886,22 +863,22 @@
         }
       }
     },
-    "rules_python@0.24.0": {
+    "rules_python@0.22.1": {
       "name": "rules_python",
-      "version": "0.24.0",
-      "key": "rules_python@0.24.0",
+      "version": "0.22.1",
+      "key": "rules_python@0.22.1",
       "repoName": "rules_python",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [
-        "@pythons_hub//:all"
+        "@bazel_tools//tools/python:autodetecting_toolchain"
       ],
       "extensionUsages": [
         {
           "extensionBzlFile": "@rules_python//python/extensions/private:internal_deps.bzl",
           "extensionName": "internal_deps",
-          "usingModule": "rules_python@0.24.0",
+          "usingModule": "rules_python@0.22.1",
           "location": {
-            "file": "https://bcr.bazel.build/modules/rules_python/0.24.0/MODULE.bazel",
+            "file": "https://bcr.bazel.build/modules/rules_python/0.22.1/MODULE.bazel",
             "line": 14,
             "column": 30
           },
@@ -919,7 +896,22 @@
             "pypi__setuptools": "pypi__setuptools",
             "pypi__tomli": "pypi__tomli",
             "pypi__wheel": "pypi__wheel",
-            "pypi__zipp": "pypi__zipp"
+            "pypi__zipp": "pypi__zipp",
+            "pypi__coverage_cp310_aarch64-apple-darwin": "pypi__coverage_cp310_aarch64-apple-darwin",
+            "pypi__coverage_cp310_aarch64-unknown-linux-gnu": "pypi__coverage_cp310_aarch64-unknown-linux-gnu",
+            "pypi__coverage_cp310_x86_64-apple-darwin": "pypi__coverage_cp310_x86_64-apple-darwin",
+            "pypi__coverage_cp310_x86_64-unknown-linux-gnu": "pypi__coverage_cp310_x86_64-unknown-linux-gnu",
+            "pypi__coverage_cp311_aarch64-unknown-linux-gnu": "pypi__coverage_cp311_aarch64-unknown-linux-gnu",
+            "pypi__coverage_cp311_x86_64-apple-darwin": "pypi__coverage_cp311_x86_64-apple-darwin",
+            "pypi__coverage_cp311_x86_64-unknown-linux-gnu": "pypi__coverage_cp311_x86_64-unknown-linux-gnu",
+            "pypi__coverage_cp38_aarch64-apple-darwin": "pypi__coverage_cp38_aarch64-apple-darwin",
+            "pypi__coverage_cp38_aarch64-unknown-linux-gnu": "pypi__coverage_cp38_aarch64-unknown-linux-gnu",
+            "pypi__coverage_cp38_x86_64-apple-darwin": "pypi__coverage_cp38_x86_64-apple-darwin",
+            "pypi__coverage_cp38_x86_64-unknown-linux-gnu": "pypi__coverage_cp38_x86_64-unknown-linux-gnu",
+            "pypi__coverage_cp39_aarch64-apple-darwin": "pypi__coverage_cp39_aarch64-apple-darwin",
+            "pypi__coverage_cp39_aarch64-unknown-linux-gnu": "pypi__coverage_cp39_aarch64-unknown-linux-gnu",
+            "pypi__coverage_cp39_x86_64-apple-darwin": "pypi__coverage_cp39_x86_64-apple-darwin",
+            "pypi__coverage_cp39_x86_64-unknown-linux-gnu": "pypi__coverage_cp39_x86_64-unknown-linux-gnu"
           },
           "devImports": [],
           "tags": [
@@ -928,7 +920,7 @@
               "attributeValues": {},
               "devDependency": false,
               "location": {
-                "file": "https://bcr.bazel.build/modules/rules_python/0.24.0/MODULE.bazel",
+                "file": "https://bcr.bazel.build/modules/rules_python/0.22.1/MODULE.bazel",
                 "line": 15,
                 "column": 22
               }
@@ -940,37 +932,23 @@
         {
           "extensionBzlFile": "@rules_python//python/extensions:python.bzl",
           "extensionName": "python",
-          "usingModule": "rules_python@0.24.0",
+          "usingModule": "rules_python@0.22.1",
           "location": {
-            "file": "https://bcr.bazel.build/modules/rules_python/0.24.0/MODULE.bazel",
-            "line": 36,
+            "file": "https://bcr.bazel.build/modules/rules_python/0.22.1/MODULE.bazel",
+            "line": 50,
             "column": 23
           },
           "imports": {
             "pythons_hub": "pythons_hub"
           },
           "devImports": [],
-          "tags": [
-            {
-              "tagName": "toolchain",
-              "attributeValues": {
-                "is_default": true,
-                "python_version": "3.11"
-              },
-              "devDependency": false,
-              "location": {
-                "file": "https://bcr.bazel.build/modules/rules_python/0.24.0/MODULE.bazel",
-                "line": 42,
-                "column": 17
-              }
-            }
-          ],
+          "tags": [],
           "hasDevUseExtension": false,
           "hasNonDevUseExtension": true
         }
       ],
       "deps": {
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_skylib": "bazel_skylib@1.5.0",
         "rules_proto": "rules_proto@5.3.0-21.7",
         "com_google_protobuf": "protobuf@21.7",
@@ -982,14 +960,14 @@
         "ruleClassName": "http_archive",
         "attributes": {
           "urls": [
-            "https://github.com/bazelbuild/rules_python/releases/download/0.24.0/rules_python-0.24.0.tar.gz"
+            "https://github.com/bazelbuild/rules_python/releases/download/0.22.1/rules_python-0.22.1.tar.gz"
           ],
-          "integrity": "sha256-CoADsEQpTXhArH2dc+7wXWzraC11FngaTsYu6zRwJXg=",
-          "strip_prefix": "rules_python-0.24.0",
+          "integrity": "sha256-pWQP3dS+sD6MH95e1xYMC6a9R359BIZhwwwGk2om/WM=",
+          "strip_prefix": "rules_python-0.22.1",
           "remote_patches": {
-            "https://bcr.bazel.build/modules/rules_python/0.24.0/patches/module_dot_bazel_version.patch": "sha256-cz8Rx8aNLvYvSpiVWk8umcsBy6jAAC0YwU42zj1cNlU="
+            "https://bcr.bazel.build/modules/rules_python/0.22.1/patches/module_dot_bazel_version.patch": "sha256-3+VLDH9gYDzNI4eOW7mABC/LKxh1xqF6NhacLbNTucs="
           },
-          "remote_patch_strip": 0
+          "remote_patch_strip": 1
         }
       }
     },
@@ -1111,11 +1089,11 @@
       ],
       "deps": {
         "bazel_skylib": "bazel_skylib@1.5.0",
-        "rules_python": "rules_python@0.24.0",
+        "rules_python": "rules_python@0.22.1",
         "rules_cc": "rules_cc@0.0.9",
         "rules_proto": "rules_proto@5.3.0-21.7",
         "rules_java": "rules_java@7.4.0",
-        "rules_pkg": "rules_pkg@0.10.1",
+        "rules_pkg": "rules_pkg@0.7.0",
         "com_google_abseil": "abseil-cpp@20211102.0",
         "zlib": "zlib@1.3",
         "upb": "upb@0.0.0-20220923-a547704",
@@ -1152,7 +1130,7 @@
       "toolchainsToRegister": [],
       "extensionUsages": [],
       "deps": {
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "rules_cc": "rules_cc@0.0.9",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
@@ -1205,7 +1183,7 @@
       ],
       "deps": {
         "bazel_skylib": "bazel_skylib@1.5.0",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       },
@@ -1252,22 +1230,23 @@
         }
       }
     },
-    "aspect_rules_lint@0.7.0": {
+    "aspect_rules_lint@0.9.1": {
       "name": "aspect_rules_lint",
-      "version": "0.7.0",
-      "key": "aspect_rules_lint@0.7.0",
+      "version": "0.9.1",
+      "key": "aspect_rules_lint@0.9.1",
       "repoName": "aspect_rules_lint",
       "executionPlatformsToRegister": [],
       "toolchainsToRegister": [],
       "extensionUsages": [],
       "deps": {
-        "aspect_bazel_lib": "aspect_bazel_lib@2.2.0",
-        "aspect_rules_js": "aspect_rules_js@1.35.0",
+        "aspect_bazel_lib": "aspect_bazel_lib@2.5.3",
+        "aspect_rules_js": "aspect_rules_js@1.38.0",
         "bazel_skylib": "bazel_skylib@1.5.0",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "rules_proto": "rules_proto@5.3.0-21.7",
         "rules_buf": "rules_buf@0.1.1",
         "com_google_protobuf": "protobuf@21.7",
+        "io_bazel_rules_go": "rules_go@0.39.1",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       },
@@ -1276,12 +1255,12 @@
         "ruleClassName": "http_archive",
         "attributes": {
           "urls": [
-            "https://github.com/aspect-build/rules_lint/releases/download/v0.7.0/rules_lint-v0.7.0.tar.gz"
+            "https://github.com/aspect-build/rules_lint/releases/download/v0.9.1/rules_lint-v0.9.1.tar.gz"
           ],
-          "integrity": "sha256-bjLfcItA6oxtRILur4/Wr6qHmNAChlS6JbZnta7lcHw=",
-          "strip_prefix": "rules_lint-0.7.0",
+          "integrity": "sha256-KNMZM5t6TnCwNkKxnb1dql8a5GHhxQcG4CEQx4+FATc=",
+          "strip_prefix": "rules_lint-0.9.1",
           "remote_patches": {
-            "https://bcr.bazel.build/modules/aspect_rules_lint/0.7.0/patches/module_dot_bazel_version.patch": "sha256-W0gn/iYu/2Zz1QxzW3gcqHl2qm+E8UZc8p8fIyWHvp0="
+            "https://bcr.bazel.build/modules/aspect_rules_lint/0.9.1/patches/module_dot_bazel_version.patch": "sha256-a8WPWh4vlmM5CcOFvLev7UKmv3I+3O9HCm7Mq3aWnrA="
           },
           "remote_patch_strip": 1
         }
@@ -1334,6 +1313,37 @@
         }
       }
     },
+    "rules_pkg@0.7.0": {
+      "name": "rules_pkg",
+      "version": "0.7.0",
+      "key": "rules_pkg@0.7.0",
+      "repoName": "rules_pkg",
+      "executionPlatformsToRegister": [],
+      "toolchainsToRegister": [],
+      "extensionUsages": [],
+      "deps": {
+        "rules_python": "rules_python@0.22.1",
+        "bazel_skylib": "bazel_skylib@1.5.0",
+        "rules_license": "rules_license@0.0.8",
+        "bazel_tools": "bazel_tools@_",
+        "local_config_platform": "local_config_platform@_"
+      },
+      "repoSpec": {
+        "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+        "ruleClassName": "http_archive",
+        "attributes": {
+          "urls": [
+            "https://github.com/bazelbuild/rules_pkg/releases/download/0.7.0/rules_pkg-0.7.0.tar.gz"
+          ],
+          "integrity": "sha256-iimOgydi7aGDBZfWT+fbWBeKqEzVkm121bdE1lWJQcI=",
+          "strip_prefix": "",
+          "remote_patches": {
+            "https://bcr.bazel.build/modules/rules_pkg/0.7.0/patches/module_dot_bazel.patch": "sha256-4OaEPZwYF6iC71ZTDg6MJ7LLqX7ZA0/kK4mT+4xKqiE="
+          },
+          "remote_patch_strip": 0
+        }
+      }
+    },
     "abseil-cpp@20211102.0": {
       "name": "abseil-cpp",
       "version": "20211102.0",
@@ -1344,7 +1354,7 @@
       "extensionUsages": [],
       "deps": {
         "rules_cc": "rules_cc@0.0.9",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       },
@@ -1377,7 +1387,7 @@
         "rules_proto": "rules_proto@5.3.0-21.7",
         "com_google_protobuf": "protobuf@21.7",
         "com_google_absl": "abseil-cpp@20211102.0",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
       },
@@ -1491,7 +1501,7 @@
       "extensionUsages": [],
       "deps": {
         "com_google_absl": "abseil-cpp@20211102.0",
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "rules_cc": "rules_cc@0.0.9",
         "bazel_tools": "bazel_tools@_",
         "local_config_platform": "local_config_platform@_"
@@ -1541,7 +1551,7 @@
         }
       ],
       "deps": {
-        "platforms": "platforms@0.0.7",
+        "platforms": "platforms@0.0.8",
         "com_google_protobuf": "protobuf@21.7",
         "rules_proto": "rules_proto@5.3.0-21.7",
         "bazel_tools": "bazel_tools@_",
@@ -1560,6 +1570,261 @@
             "https://bcr.bazel.build/modules/rules_buf/0.1.1/patches/bzlmod.patch": "sha256-D5PYozjx10XcIqo0mMyoGIqO3PJHJtxLQ1vo3zesDS0="
           },
           "remote_patch_strip": 1
+        }
+      }
+    },
+    "rules_go@0.39.1": {
+      "name": "rules_go",
+      "version": "0.39.1",
+      "key": "rules_go@0.39.1",
+      "repoName": "io_bazel_rules_go",
+      "executionPlatformsToRegister": [],
+      "toolchainsToRegister": [
+        "@go_toolchains//:all"
+      ],
+      "extensionUsages": [
+        {
+          "extensionBzlFile": "@io_bazel_rules_go//go/private:extensions.bzl",
+          "extensionName": "non_module_dependencies",
+          "usingModule": "rules_go@0.39.1",
+          "location": {
+            "file": "https://bcr.bazel.build/modules/rules_go/0.39.1/MODULE.bazel",
+            "line": 13,
+            "column": 40
+          },
+          "imports": {
+            "go_googleapis": "go_googleapis",
+            "io_bazel_rules_nogo": "io_bazel_rules_nogo"
+          },
+          "devImports": [],
+          "tags": [],
+          "hasDevUseExtension": false,
+          "hasNonDevUseExtension": true
+        },
+        {
+          "extensionBzlFile": "@io_bazel_rules_go//go:extensions.bzl",
+          "extensionName": "go_sdk",
+          "usingModule": "rules_go@0.39.1",
+          "location": {
+            "file": "https://bcr.bazel.build/modules/rules_go/0.39.1/MODULE.bazel",
+            "line": 20,
+            "column": 23
+          },
+          "imports": {
+            "go_toolchains": "go_toolchains"
+          },
+          "devImports": [],
+          "tags": [
+            {
+              "tagName": "download",
+              "attributeValues": {
+                "name": "go_default_sdk",
+                "version": "1.19.8"
+              },
+              "devDependency": false,
+              "location": {
+                "file": "https://bcr.bazel.build/modules/rules_go/0.39.1/MODULE.bazel",
+                "line": 21,
+                "column": 16
+              }
+            }
+          ],
+          "hasDevUseExtension": false,
+          "hasNonDevUseExtension": true
+        },
+        {
+          "extensionBzlFile": "@gazelle//:extensions.bzl",
+          "extensionName": "go_deps",
+          "usingModule": "rules_go@0.39.1",
+          "location": {
+            "file": "https://bcr.bazel.build/modules/rules_go/0.39.1/MODULE.bazel",
+            "line": 31,
+            "column": 24
+          },
+          "imports": {
+            "com_github_gogo_protobuf": "com_github_gogo_protobuf",
+            "com_github_golang_mock": "com_github_golang_mock",
+            "com_github_golang_protobuf": "com_github_golang_protobuf",
+            "org_golang_google_genproto": "org_golang_google_genproto",
+            "org_golang_google_grpc": "org_golang_google_grpc",
+            "org_golang_google_protobuf": "org_golang_google_protobuf",
+            "org_golang_x_net": "org_golang_x_net"
+          },
+          "devImports": [],
+          "tags": [
+            {
+              "tagName": "from_file",
+              "attributeValues": {
+                "go_mod": "//:go.mod"
+              },
+              "devDependency": false,
+              "location": {
+                "file": "https://bcr.bazel.build/modules/rules_go/0.39.1/MODULE.bazel",
+                "line": 32,
+                "column": 18
+              }
+            },
+            {
+              "tagName": "module",
+              "attributeValues": {
+                "path": "github.com/gogo/protobuf",
+                "sum": "h1:Ov1cvc58UF3b5XjBnZv7+opcTcQFZebYjWzi34vdm4Q=",
+                "version": "v1.3.2"
+              },
+              "devDependency": false,
+              "location": {
+                "file": "https://bcr.bazel.build/modules/rules_go/0.39.1/MODULE.bazel",
+                "line": 33,
+                "column": 15
+              }
+            }
+          ],
+          "hasDevUseExtension": false,
+          "hasNonDevUseExtension": true
+        }
+      ],
+      "deps": {
+        "bazel_skylib": "bazel_skylib@1.5.0",
+        "platforms": "platforms@0.0.8",
+        "rules_proto": "rules_proto@5.3.0-21.7",
+        "com_google_protobuf": "protobuf@21.7",
+        "gazelle": "gazelle@0.30.0",
+        "bazel_tools": "bazel_tools@_",
+        "local_config_platform": "local_config_platform@_"
+      },
+      "repoSpec": {
+        "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+        "ruleClassName": "http_archive",
+        "attributes": {
+          "urls": [
+            "https://github.com/bazelbuild/rules_go/releases/download/v0.39.1/rules_go-v0.39.1.zip"
+          ],
+          "integrity": "sha256-bcLaerTPXXv8fJSXdrG3xzPwXlbtxLzZAiuySdLiqZY=",
+          "strip_prefix": "",
+          "remote_patches": {},
+          "remote_patch_strip": 0
+        }
+      }
+    },
+    "gazelle@0.30.0": {
+      "name": "gazelle",
+      "version": "0.30.0",
+      "key": "gazelle@0.30.0",
+      "repoName": "bazel_gazelle",
+      "executionPlatformsToRegister": [],
+      "toolchainsToRegister": [],
+      "extensionUsages": [
+        {
+          "extensionBzlFile": "@io_bazel_rules_go//go:extensions.bzl",
+          "extensionName": "go_sdk",
+          "usingModule": "gazelle@0.30.0",
+          "location": {
+            "file": "https://bcr.bazel.build/modules/gazelle/0.30.0/MODULE.bazel",
+            "line": 12,
+            "column": 23
+          },
+          "imports": {
+            "go_default_sdk": "go_default_sdk"
+          },
+          "devImports": [],
+          "tags": [],
+          "hasDevUseExtension": false,
+          "hasNonDevUseExtension": true
+        },
+        {
+          "extensionBzlFile": "@bazel_gazelle//internal/bzlmod:non_module_deps.bzl",
+          "extensionName": "non_module_deps",
+          "usingModule": "gazelle@0.30.0",
+          "location": {
+            "file": "https://bcr.bazel.build/modules/gazelle/0.30.0/MODULE.bazel",
+            "line": 17,
+            "column": 32
+          },
+          "imports": {
+            "bazel_gazelle_go_repository_cache": "bazel_gazelle_go_repository_cache",
+            "bazel_gazelle_go_repository_tools": "bazel_gazelle_go_repository_tools"
+          },
+          "devImports": [],
+          "tags": [],
+          "hasDevUseExtension": false,
+          "hasNonDevUseExtension": true
+        },
+        {
+          "extensionBzlFile": "@io_bazel_rules_go//go/private:extensions.bzl",
+          "extensionName": "non_module_dependencies",
+          "usingModule": "gazelle@0.30.0",
+          "location": {
+            "file": "https://bcr.bazel.build/modules/gazelle/0.30.0/MODULE.bazel",
+            "line": 24,
+            "column": 41
+          },
+          "imports": {
+            "go_googleapis": "go_googleapis"
+          },
+          "devImports": [],
+          "tags": [],
+          "hasDevUseExtension": false,
+          "hasNonDevUseExtension": true
+        },
+        {
+          "extensionBzlFile": "@bazel_gazelle//:extensions.bzl",
+          "extensionName": "go_deps",
+          "usingModule": "gazelle@0.30.0",
+          "location": {
+            "file": "https://bcr.bazel.build/modules/gazelle/0.30.0/MODULE.bazel",
+            "line": 30,
+            "column": 24
+          },
+          "imports": {
+            "com_github_bazelbuild_buildtools": "com_github_bazelbuild_buildtools",
+            "com_github_bmatcuk_doublestar_v4": "com_github_bmatcuk_doublestar_v4",
+            "com_github_fsnotify_fsnotify": "com_github_fsnotify_fsnotify",
+            "com_github_google_go_cmp": "com_github_google_go_cmp",
+            "com_github_pelletier_go_toml": "com_github_pelletier_go_toml",
+            "com_github_pmezard_go_difflib": "com_github_pmezard_go_difflib",
+            "org_golang_x_mod": "org_golang_x_mod",
+            "org_golang_x_sync": "org_golang_x_sync",
+            "org_golang_x_tools": "org_golang_x_tools",
+            "bazel_gazelle_go_repository_config": "bazel_gazelle_go_repository_config"
+          },
+          "devImports": [],
+          "tags": [
+            {
+              "tagName": "from_file",
+              "attributeValues": {
+                "go_mod": "//:go.mod"
+              },
+              "devDependency": false,
+              "location": {
+                "file": "https://bcr.bazel.build/modules/gazelle/0.30.0/MODULE.bazel",
+                "line": 31,
+                "column": 18
+              }
+            }
+          ],
+          "hasDevUseExtension": false,
+          "hasNonDevUseExtension": true
+        }
+      ],
+      "deps": {
+        "bazel_skylib": "bazel_skylib@1.5.0",
+        "com_google_protobuf": "protobuf@21.7",
+        "io_bazel_rules_go": "rules_go@0.39.1",
+        "rules_proto": "rules_proto@5.3.0-21.7",
+        "bazel_tools": "bazel_tools@_",
+        "local_config_platform": "local_config_platform@_"
+      },
+      "repoSpec": {
+        "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+        "ruleClassName": "http_archive",
+        "attributes": {
+          "urls": [
+            "https://github.com/bazelbuild/bazel-gazelle/releases/download/v0.30.0/bazel-gazelle-v0.30.0.tar.gz"
+          ],
+          "integrity": "sha256-cn8+Tt2W6iDCnowsqejSr3JNjHd455I6hUssgJUrxAU=",
+          "strip_prefix": "",
+          "remote_patches": {},
+          "remote_patch_strip": 0
         }
       }
     }
@@ -1594,7 +1859,7 @@
     },
     "@@aspect_bazel_lib~//lib:extensions.bzl%toolchains": {
       "general": {
-        "bzlTransitiveDigest": "RgEAd3OmCK7o8bwg4h7oP/L/QxDbRahctyY4WA9bt9Y=",
+        "bzlTransitiveDigest": "H6ezdphBae7pq8EW1mSupf+FjMuk8mtYNgMZ8pclWPc=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -2018,9 +2283,10 @@
     },
     "@@aspect_rules_js~//npm:extensions.bzl%npm": {
       "general": {
-        "bzlTransitiveDigest": "2zVDjN+YDXHb6l1/n0UDIb5AyVVvksEJKmw9vgk+AGk=",
+        "bzlTransitiveDigest": "JclDrZPByDOldKWAZFE1xwsLDhWrZNNTNyA7SwT+xPY=",
         "recordedFileInputs": {
-          "@@rules_mjml~//pnpm-lock.yaml": "a3d96697e0fabb67fd8b081d186a6250e92363a8bdeaa59cec16e5d652900fdc"
+          "@@rules_mjml~//pnpm-lock.yaml": "a3d96697e0fabb67fd8b081d186a6250e92363a8bdeaa59cec16e5d652900fdc",
+          "@@aspect_bazel_lib~~toolchains~yq_darwin_arm64//yq": "db8c11ca4c1dda8fe7c211e82e28191d48bd9ae83471b952003e819de79bcb51"
         },
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -2043,11 +2309,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__detect-node__2.1.0__links": {
@@ -2068,11 +2336,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__escalade__3.1.2": {
@@ -2117,11 +2387,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__is-binary-path__2.1.0": {
@@ -2216,11 +2488,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__he__1.2.0__links": {
@@ -2241,11 +2515,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__entities__2.2.0__links": {
@@ -2266,11 +2542,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-style__4.15.3__links": {
@@ -2588,11 +2866,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__domhandler__3.3.0": {
@@ -2642,11 +2922,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ansi-colors__4.1.3": {
@@ -2691,11 +2973,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__path-key__3.1.1": {
@@ -2740,11 +3024,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mime__2.6.0__links": {
@@ -2765,11 +3051,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__braces__3.0.2__links": {
@@ -2801,11 +3089,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ansi-regex__6.0.1__links": {
@@ -2826,11 +3116,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__whatwg-url__5.0.0": {
@@ -3220,11 +3512,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ansi-regex__5.0.1": {
@@ -3341,11 +3635,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__source-map__0.6.1": {
@@ -3480,11 +3776,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__is-number__7.0.0__links": {
@@ -3505,11 +3803,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__balanced-match__1.0.2__links": {
@@ -3530,11 +3830,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__minipass__7.0.4__links": {
@@ -3555,11 +3857,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-image__4.15.3__links": {
@@ -3877,11 +4181,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__uglify-js__3.17.4": {
@@ -3974,11 +4280,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__config-chain__1.1.13__links": {
@@ -4008,11 +4316,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__at_one-ini_wasm__0.1.1__links": {
@@ -4033,11 +4343,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__isexe__2.0.0": {
@@ -4379,11 +4691,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__path-key__3.1.1__links": {
@@ -4404,11 +4718,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ini__1.3.8": {
@@ -4453,11 +4769,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__upper-case__1.1.3__links": {
@@ -4478,11 +4796,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__y18n__5.0.8": {
@@ -4567,11 +4887,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__to-regex-range__5.0.1": {
@@ -4616,11 +4938,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__editorconfig__1.0.4__links": {
@@ -4670,11 +4994,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ansi-regex__5.0.1__links": {
@@ -4695,11 +5021,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__yargs__17.7.2": {
@@ -4746,11 +5074,13 @@
               "lifecycle_hooks_execution_requirements": [
                 "no-sandbox"
               ],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head__4.15.3__links": {
@@ -5068,11 +5398,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__webidl-conversions__3.0.1": {
@@ -5462,11 +5794,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ini__1.3.8__links": {
@@ -5487,11 +5821,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__dom-serializer__2.0.0": {
@@ -5536,11 +5872,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-raw__4.15.3__links": {
@@ -5858,11 +6196,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__entities__4.5.0__links": {
@@ -5883,11 +6223,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-text__4.15.3": {
@@ -5972,11 +6314,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-core__4.15.3": {
@@ -6026,11 +6370,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__domutils__2.8.0__links": {
@@ -6067,11 +6413,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-navbar__4.15.3": {
@@ -6140,11 +6488,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__escape-goat__3.0.0": {
@@ -6213,11 +6563,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mensch__0.3.4": {
@@ -6313,11 +6665,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__color-name__1.1.4__links": {
@@ -6338,11 +6692,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__dom-serializer__2.0.0__links": {
@@ -6376,11 +6732,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__yallist__4.0.0": {
@@ -6478,11 +6836,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-html-attributes__4.15.3": {
@@ -6532,11 +6892,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__glob__10.3.10": {
@@ -6583,11 +6945,13 @@
               "lifecycle_hooks_execution_requirements": [
                 "no-sandbox"
               ],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__regenerator-runtime__0.14.1__links": {
@@ -6608,11 +6972,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__domhandler__3.3.0__links": {
@@ -6638,11 +7004,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__glob-parent__5.1.2__links": {
@@ -6671,11 +7039,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ansi-regex__6.0.1": {
@@ -6836,11 +7206,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__wrap-ansi__7.0.0": {
@@ -6885,11 +7257,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__tr46__0.0.3": {
@@ -6934,11 +7308,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__domutils__3.1.0__links": {
@@ -6975,11 +7351,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__nopt__7.2.0__links": {
@@ -7005,11 +7383,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__css-select__5.1.0": {
@@ -7054,11 +7434,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__to-regex-range__5.0.1__links": {
@@ -7084,11 +7466,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__web-resource-inliner__6.0.1": {
@@ -7191,11 +7575,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-breakpoint__4.15.3__links": {
@@ -7513,11 +7899,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__escape-goat__3.0.0__links": {
@@ -7538,11 +7926,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__foreground-child__3.1.1": {
@@ -7619,11 +8009,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-parser-xml__4.15.3__links": {
@@ -7679,11 +8071,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-validator__4.15.3": {
@@ -7728,11 +8122,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain": {
@@ -7763,6 +8159,10 @@
                   "no-sandbox"
                 ]
               },
+              "lifecycle_hooks_use_default_shell_env": {
+                "*": "false"
+              },
+              "replace_packages": {},
               "bins": {},
               "verify_node_modules_ignored": "@@rules_mjml~//:.bazelignore",
               "external_repository_action_cache": ".aspect/rules/external_repository_action_cache",
@@ -7775,8 +8175,11 @@
               "data": [],
               "preupdate": [],
               "quiet": true,
-              "update_pnpm_lock_node_toolchain_prefix": "nodejs",
-              "npm_package_target_name": "{dirname}"
+              "node_toolchain_prefix": "nodejs",
+              "yq_toolchain_prefix": "yq",
+              "npm_package_target_name": "{dirname}",
+              "use_starlark_yaml_parser": false,
+              "bzlmod": true
             }
           },
           "mjml_toolchain__ansi-styles__6.2.1__links": {
@@ -7797,11 +8200,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-attributes__4.15.3__links": {
@@ -8119,11 +8524,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-column__4.15.3": {
@@ -8269,11 +8676,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__minipass__7.0.4": {
@@ -8318,11 +8727,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__relateurl__0.2.7": {
@@ -8372,11 +8783,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__strip-ansi__7.1.0": {
@@ -8469,11 +8882,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__param-case__2.1.1": {
@@ -8571,11 +8986,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__js-beautify__1.15.1__links": {
@@ -8727,11 +9144,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__glob__10.3.10__links": {
@@ -8845,11 +9264,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-core__4.15.3__links": {
@@ -9171,11 +9592,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-preview__4.15.3__links": {
@@ -9493,11 +9916,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__cheerio__1.0.0-rc.12": {
@@ -9662,11 +10087,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-body__4.15.3__links": {
@@ -9984,11 +10411,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__parse5-htmlparser2-tree-adapter__7.0.0__links": {
@@ -10024,11 +10453,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__shebang-command__2.0.0": {
@@ -10121,11 +10552,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-divider__4.15.3": {
@@ -10515,11 +10948,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mime__2.6.0": {
@@ -10607,11 +11042,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__get-caller-file__2.0.5": {
@@ -11001,11 +11438,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__entities__4.5.0": {
@@ -11347,11 +11786,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__htmlparser2__8.0.2__links": {
@@ -11392,11 +11833,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__normalize-path__3.0.0__links": {
@@ -11417,11 +11860,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__y18n__5.0.8__links": {
@@ -11442,11 +11887,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__jackspeak__2.3.6": {
@@ -11519,11 +11966,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__picomatch__2.3.1": {
@@ -11865,11 +12314,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__path-scurry__1.10.1__links": {
@@ -11899,11 +12350,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__balanced-match__1.0.2": {
@@ -11953,11 +12406,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__brace-expansion__2.0.1": {
@@ -12030,11 +12485,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml__4.15.3": {
@@ -12404,11 +12861,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-migrate__4.15.3__links": {
@@ -12726,11 +13185,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-html-attributes__4.15.3__links": {
@@ -13048,11 +13509,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-image__4.15.3": {
@@ -13102,11 +13565,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__cheerio__1.0.0-rc.12__links": {
@@ -13174,11 +13639,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-section__4.15.3": {
@@ -13231,11 +13698,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__clean-css__4.2.4__links": {
@@ -13261,11 +13730,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__jackspeak__2.3.6__links": {
@@ -13331,11 +13802,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-cli__4.15.3": {
@@ -13409,11 +13882,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__css-what__6.1.0": {
@@ -13467,11 +13942,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__color-name__1.1.4": {
@@ -13548,11 +14025,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__camel-case__3.0.0": {
@@ -13948,11 +14427,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__minimatch__9.0.1__links": {
@@ -13981,11 +14462,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__escalade__3.1.2__links": {
@@ -14006,11 +14489,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__uglify-js__3.17.4__links": {
@@ -14031,11 +14516,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ansi-styles__6.2.1": {
@@ -14582,11 +15069,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__color-convert__2.0.1__links": {
@@ -14612,11 +15101,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__is-glob__4.0.3": {
@@ -14709,11 +15200,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-table__4.15.3": {
@@ -14769,11 +15262,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__cliui__8.0.1": {
@@ -14818,11 +15313,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-breakpoint__4.15.3": {
@@ -14872,11 +15369,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__yargs-parser__21.1.1__links": {
@@ -14897,11 +15396,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__abbrev__2.0.0": {
@@ -14946,11 +15447,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__eastasianwidth__0.2.0__links": {
@@ -14971,11 +15474,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__braces__3.0.2": {
@@ -15049,11 +15554,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__slick__1.12.2__links": {
@@ -15074,11 +15581,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__commander__10.0.1": {
@@ -15224,11 +15733,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__source-map__0.6.1__links": {
@@ -15249,11 +15760,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__at_babel_runtime__7.24.0": {
@@ -15322,11 +15835,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__domhandler__4.3.1": {
@@ -15668,11 +16183,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__minimatch__9.0.1": {
@@ -15725,11 +16242,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__minimatch__9.0.3": {
@@ -15782,11 +16301,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__brace-expansion__2.0.1__links": {
@@ -15812,11 +16333,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__wrap-ansi__8.1.0__links": {
@@ -15859,11 +16382,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__no-case__2.3.2": {
@@ -16303,11 +16828,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__require-directory__2.1.1": {
@@ -16673,11 +17200,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__webidl-conversions__3.0.1__links": {
@@ -16698,11 +17227,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__shebang-regex__3.0.0": {
@@ -17068,11 +17599,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__htmlparser2__5.0.1": {
@@ -17414,11 +17947,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__fill-range__7.0.1": {
@@ -17492,11 +18027,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__anymatch__3.1.3__links": {
@@ -17526,11 +18063,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__domelementtype__2.3.0": {
@@ -17640,11 +18179,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__htmlparser2__9.1.0": {
@@ -17986,11 +18527,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-font__4.15.3__links": {
@@ -18308,11 +18851,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__css-select__5.1.0__links": {
@@ -18363,11 +18908,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-accordion__4.15.3": {
@@ -18484,11 +19031,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__binary-extensions__2.2.0": {
@@ -18634,11 +19183,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-head-style__4.15.3": {
@@ -18980,11 +19531,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__ansi-styles__4.3.0": {
@@ -19053,11 +19606,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__dom-serializer__1.4.1__links": {
@@ -19091,11 +19646,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__htmlparser2__5.0.1__links": {
@@ -19137,11 +19694,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__is-extglob__2.1.1__links": {
@@ -19162,11 +19721,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__minimatch__9.0.3__links": {
@@ -19195,11 +19756,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__string-width__5.1.2": {
@@ -19299,11 +19862,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__lower-case__1.1.4__links": {
@@ -19324,11 +19889,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__domelementtype__2.3.0__links": {
@@ -19349,11 +19916,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__boolbase__1.0.0": {
@@ -19522,11 +20091,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__camel-case__3.0.0__links": {
@@ -19559,11 +20130,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-wrapper__4.15.3__links": {
@@ -19885,11 +20458,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__mjml-preset-core__4.15.3": {
@@ -19977,11 +20552,13 @@
               "lifecycle_build_target": false,
               "lifecycle_hooks_env": [],
               "lifecycle_hooks_execution_requirements": [],
+              "lifecycle_hooks_use_default_shell_env": false,
               "bins": {},
               "npm_translate_lock_repo": "mjml_toolchain",
               "package_visibility": [
                 "//visibility:public"
-              ]
+              ],
+              "replace_package": ""
             }
           },
           "mjml_toolchain__editorconfig__1.0.4": {
@@ -20063,6 +20640,11 @@
             "aspect_rules_js~",
             "bazel_tools",
             "bazel_tools"
+          ],
+          [
+            "aspect_rules_js~",
+            "yq_darwin_arm64",
+            "aspect_bazel_lib~~toolchains~yq_darwin_arm64"
           ]
         ]
       }
@@ -20174,6 +20756,60 @@
         "recordedRepoMappingEntries": [
           [
             "rules_buf~",
+            "bazel_tools",
+            "bazel_tools"
+          ]
+        ]
+      }
+    },
+    "@@rules_go~//go:extensions.bzl%go_sdk": {
+      "general": {
+        "bzlTransitiveDigest": "k4MEsADgBfRC+sbMqB3lZL0JpdsCxlwSYO+z9zn9Y80=",
+        "recordedFileInputs": {},
+        "recordedDirentsInputs": {},
+        "envVariables": {},
+        "generatedRepoSpecs": {
+          "go_default_sdk": {
+            "bzlFile": "@@rules_go~//go/private:sdk.bzl",
+            "ruleClassName": "go_download_sdk_rule",
+            "attributes": {
+              "goos": "",
+              "goarch": "",
+              "sdks": {},
+              "urls": [
+                "https://dl.google.com/go/{}"
+              ],
+              "version": "1.19.8"
+            }
+          },
+          "go_toolchains": {
+            "bzlFile": "@@rules_go~//go/private:sdk.bzl",
+            "ruleClassName": "go_multiple_toolchains",
+            "attributes": {
+              "prefixes": [
+                "_0000_go_default_sdk_"
+              ],
+              "geese": [
+                ""
+              ],
+              "goarchs": [
+                ""
+              ],
+              "sdk_repos": [
+                "go_default_sdk"
+              ],
+              "sdk_types": [
+                "remote"
+              ],
+              "sdk_versions": [
+                "1.19.8"
+              ]
+            }
+          }
+        },
+        "recordedRepoMappingEntries": [
+          [
+            "rules_go~",
             "bazel_tools",
             "bazel_tools"
           ]
@@ -20771,149 +21407,6 @@
           }
         },
         "recordedRepoMappingEntries": []
-      }
-    },
-    "@@rules_python~//python/extensions:python.bzl%python": {
-      "general": {
-        "bzlTransitiveDigest": "mh86AsACwkNSoqpB2hzQpecNE0j+gb57EL0ZjxD3ZRE=",
-        "recordedFileInputs": {},
-        "recordedDirentsInputs": {},
-        "envVariables": {},
-        "generatedRepoSpecs": {
-          "python_3_11": {
-            "bzlFile": "@@rules_python~//python/private:toolchains_repo.bzl",
-            "ruleClassName": "toolchain_aliases",
-            "attributes": {
-              "python_version": "3.11.1",
-              "user_repository_name": "python_3_11"
-            }
-          },
-          "python_3_11_aarch64-unknown-linux-gnu": {
-            "bzlFile": "@@rules_python~//python:repositories.bzl",
-            "ruleClassName": "python_repository",
-            "attributes": {
-              "sha256": "debf15783bdcb5530504f533d33fda75a7b905cec5361ae8f33da5ba6599f8b4",
-              "patches": [],
-              "platform": "aarch64-unknown-linux-gnu",
-              "python_version": "3.11.1",
-              "release_filename": "20230116/cpython-3.11.1+20230116-aarch64-unknown-linux-gnu-install_only.tar.gz",
-              "urls": [
-                "https://github.com/indygreg/python-build-standalone/releases/download/20230116/cpython-3.11.1+20230116-aarch64-unknown-linux-gnu-install_only.tar.gz"
-              ],
-              "distutils_content": "",
-              "strip_prefix": "python",
-              "coverage_tool": "",
-              "ignore_root_user_error": false
-            }
-          },
-          "python_3_11_aarch64-apple-darwin": {
-            "bzlFile": "@@rules_python~//python:repositories.bzl",
-            "ruleClassName": "python_repository",
-            "attributes": {
-              "sha256": "4918cdf1cab742a90f85318f88b8122aeaa2d04705803c7b6e78e81a3dd40f80",
-              "patches": [],
-              "platform": "aarch64-apple-darwin",
-              "python_version": "3.11.1",
-              "release_filename": "20230116/cpython-3.11.1+20230116-aarch64-apple-darwin-install_only.tar.gz",
-              "urls": [
-                "https://github.com/indygreg/python-build-standalone/releases/download/20230116/cpython-3.11.1+20230116-aarch64-apple-darwin-install_only.tar.gz"
-              ],
-              "distutils_content": "",
-              "strip_prefix": "python",
-              "coverage_tool": "",
-              "ignore_root_user_error": false
-            }
-          },
-          "python_3_11_x86_64-apple-darwin": {
-            "bzlFile": "@@rules_python~//python:repositories.bzl",
-            "ruleClassName": "python_repository",
-            "attributes": {
-              "sha256": "20a4203d069dc9b710f70b09e7da2ce6f473d6b1110f9535fb6f4c469ed54733",
-              "patches": [],
-              "platform": "x86_64-apple-darwin",
-              "python_version": "3.11.1",
-              "release_filename": "20230116/cpython-3.11.1+20230116-x86_64-apple-darwin-install_only.tar.gz",
-              "urls": [
-                "https://github.com/indygreg/python-build-standalone/releases/download/20230116/cpython-3.11.1+20230116-x86_64-apple-darwin-install_only.tar.gz"
-              ],
-              "distutils_content": "",
-              "strip_prefix": "python",
-              "coverage_tool": "",
-              "ignore_root_user_error": false
-            }
-          },
-          "pythons_hub": {
-            "bzlFile": "@@rules_python~//python/extensions/private:pythons_hub.bzl",
-            "ruleClassName": "hub_repo",
-            "attributes": {
-              "default_python_version": "3.11",
-              "toolchain_prefixes": [
-                "_0000_python_3_11_"
-              ],
-              "toolchain_python_versions": [
-                "3.11"
-              ],
-              "toolchain_set_python_version_constraints": [
-                "False"
-              ],
-              "toolchain_user_repository_names": [
-                "python_3_11"
-              ]
-            }
-          },
-          "python_versions": {
-            "bzlFile": "@@rules_python~//python/private:toolchains_repo.bzl",
-            "ruleClassName": "multi_toolchain_aliases",
-            "attributes": {
-              "python_versions": {
-                "3.11": "python_3_11"
-              }
-            }
-          },
-          "python_3_11_x86_64-pc-windows-msvc": {
-            "bzlFile": "@@rules_python~//python:repositories.bzl",
-            "ruleClassName": "python_repository",
-            "attributes": {
-              "sha256": "edc08979cb0666a597466176511529c049a6f0bba8adf70df441708f766de5bf",
-              "patches": [],
-              "platform": "x86_64-pc-windows-msvc",
-              "python_version": "3.11.1",
-              "release_filename": "20230116/cpython-3.11.1+20230116-x86_64-pc-windows-msvc-shared-install_only.tar.gz",
-              "urls": [
-                "https://github.com/indygreg/python-build-standalone/releases/download/20230116/cpython-3.11.1+20230116-x86_64-pc-windows-msvc-shared-install_only.tar.gz"
-              ],
-              "distutils_content": "",
-              "strip_prefix": "python",
-              "coverage_tool": "",
-              "ignore_root_user_error": false
-            }
-          },
-          "python_3_11_x86_64-unknown-linux-gnu": {
-            "bzlFile": "@@rules_python~//python:repositories.bzl",
-            "ruleClassName": "python_repository",
-            "attributes": {
-              "sha256": "02a551fefab3750effd0e156c25446547c238688a32fabde2995c941c03a6423",
-              "patches": [],
-              "platform": "x86_64-unknown-linux-gnu",
-              "python_version": "3.11.1",
-              "release_filename": "20230116/cpython-3.11.1+20230116-x86_64-unknown-linux-gnu-install_only.tar.gz",
-              "urls": [
-                "https://github.com/indygreg/python-build-standalone/releases/download/20230116/cpython-3.11.1+20230116-x86_64-unknown-linux-gnu-install_only.tar.gz"
-              ],
-              "distutils_content": "",
-              "strip_prefix": "python",
-              "coverage_tool": "",
-              "ignore_root_user_error": false
-            }
-          }
-        },
-        "recordedRepoMappingEntries": [
-          [
-            "rules_python~",
-            "bazel_tools",
-            "bazel_tools"
-          ]
-        ]
       }
     }
   }

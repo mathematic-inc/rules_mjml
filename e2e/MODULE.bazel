@@ -1,4 +1,4 @@
-module(name = "mjml_library", version = "0.0.0")
+module(name = "mjml_binary", version = "0.0.0")
 
 bazel_dep(name = "rules_mjml", version = "0.0.0")
 local_path_override(
