@@ -73,8 +73,6 @@ def _mjml_binary_impl(ctx):
 
     out = ctx.actions.declare_file(paths.replace_extension(main.basename, ".html"))
 
-    inputs = copy_files_to_bin_actions(ctx = ctx, files = inputs)
-
     args = ctx.actions.args()
     args.add(main.short_path)
     args.add("-o", out.short_path)
