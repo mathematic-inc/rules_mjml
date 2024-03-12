@@ -2,6 +2,7 @@
 
 load("@bazel_skylib//lib:paths.bzl", "paths")
 load("@bazel_skylib//lib:shell.bzl", "shell")
+load("@aspect_bazel_lib//lib:copy_to_bin.bzl", "COPY_FILE_TO_BIN_TOOLCHAINS", "copy_files_to_bin_actions")
 
 MjmlInfo = provider("Provider for MJML", fields = ["files"])
 
@@ -71,9 +72,11 @@ def _mjml_binary_impl(ctx):
 
     out = ctx.actions.declare_file(paths.replace_extension(main.basename, ".html"))
 
+    inputs = copy_files_to_bin_actions(ctx = ctx, files = inputs)
+
     args = ctx.actions.args()
-    args.add(main)
-    args.add("-o", out)
+    args.add(main.short_path)
+    args.add("-o", out.short_path)
 
     ctx.actions.run(
         outputs = [out],
@@ -82,9 +85,7 @@ def _mjml_binary_impl(ctx):
         executable = ctx.executable._mjml,
         arguments = [args, opts],
         env = {
-            # This breaks on Windows. rules_js should be updated to
-            # support this path.
-            "BAZEL_BINDIR": ".",
+            "BAZEL_BINDIR": ctx.bin_dir.path,
         },
     )
 
@@ -114,4 +115,5 @@ mjml_binary = rule(
             executable = True,
         ),
     } | COMMON_ATTRS,
+    toolchains = COPY_FILE_TO_BIN_TOOLCHAINS,
 )
