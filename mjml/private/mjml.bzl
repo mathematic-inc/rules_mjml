@@ -72,7 +72,7 @@ def _mjml_binary_impl(ctx):
         if main == None:
             fail("'main' attribute was not specified and {} could not be found".format(basename))
 
-    out = ctx.actions.declare_file(paths.replace_extension(main.basename, ".html"))
+    out = ctx.actions.declare_file(paths.replace_extension(main.basename, ".html"), sibling = main)
 
     args = ctx.actions.args()
     args.add(main.short_path)
