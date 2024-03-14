@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.2.3](https://github.com/mathematic-inc/rules_mjml/compare/v0.2.2...v0.2.3) (2024-03-14)
+
+
+### Bug Fixes
+
+* allow matching nested directory `main`s ([ba53f75](https://github.com/mathematic-inc/rules_mjml/commit/ba53f75ccc25a2cc37df4ce41546d0919c19b043))
+* check for root package ([#12](https://github.com/mathematic-inc/rules_mjml/issues/12)) ([566020f](https://github.com/mathematic-inc/rules_mjml/commit/566020fe3b9f0b6b9ab17b1649b35c9d9b44f1fe))
+* use sibling for main ([ee35fbc](https://github.com/mathematic-inc/rules_mjml/commit/ee35fbcabbc9e1963ff75fc070047c042596ee94))
+
 ## [0.2.2](https://github.com/mathematic-inc/rules_mjml/compare/v0.2.1...v0.2.2) (2024-03-12)
 
 
