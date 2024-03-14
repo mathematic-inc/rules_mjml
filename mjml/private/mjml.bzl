@@ -63,8 +63,9 @@ def _mjml_binary_impl(ctx):
             fail("'main' attribute must be a .mjml file in 'srcs'")
     else:
         basename = ctx.label.name + ".mjml"
+        main_short_path = "/".join([ctx.label.package, basename])
         for src in ctx.files.srcs:
-            if src.basename == basename and src.owner.package == ctx.label.package:
+            if src.short_path == main_short_path:
                 main = src
                 break
 
