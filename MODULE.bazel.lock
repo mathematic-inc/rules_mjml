@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 6,
-  "moduleFileHash": "eaf3faf18f4fb70fe106064e7f4f41f6525e041d99f010f07a7a8c5ad3f67287",
+  "moduleFileHash": "7943a16bd517dd61dcf86c708888c18f6d2197014f62b361f3d4fcdda5678b00",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -18,7 +18,7 @@
   "moduleDepGraph": {
     "<root>": {
       "name": "rules_mjml",
-      "version": "0.2.1",
+      "version": "0.2.2",
       "key": "<root>",
       "repoName": "rules_mjml",
       "executionPlatformsToRegister": [],

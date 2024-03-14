@@ -14,7 +14,7 @@
   },
   "localOverrideHashes": {
     "bazel_tools": "1ae69322ac3823527337acf02016e8ee95813d8d356f47060255b8956fa642f0",
-    "rules_mjml": "db4ba7a486ca9707ea42a25cfdf14c93338cf45f8f5358f4720a955c31f9e942"
+    "rules_mjml": "7943a16bd517dd61dcf86c708888c18f6d2197014f62b361f3d4fcdda5678b00"
   },
   "moduleDepGraph": {
     "<root>": {
@@ -34,7 +34,7 @@
     },
     "rules_mjml@_": {
       "name": "rules_mjml",
-      "version": "0.1.0",
+      "version": "0.2.2",
       "key": "rules_mjml@_",
       "repoName": "rules_mjml",
       "executionPlatformsToRegister": [],
