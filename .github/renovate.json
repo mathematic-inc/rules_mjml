@@ -3,7 +3,7 @@
   "extends": ["config:recommended"],
   "packageRules": [
     {
-      "matchManagers": ["bazel-module", "github-actions", "npm"],
+      "matchManagers": ["bazel-module", "github-actions", "npm", "nvm"],
       "groupName": "{{manager}}"
     }
   ]
