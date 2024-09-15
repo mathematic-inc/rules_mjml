@@ -100,13 +100,7 @@ mjml_binary = rule(
         ),
         "minify_options": attr.string(
             doc = "Options for minifying output. See [html-minifier](https://github.com/kangax/html-minifier) for options.",
-            default = """
-            {
-                "collapseWhitespace": true,
-                "minifyCSS": false,
-                "removeEmptyAttributes": true
-            }
-            """,
+            default = """{"collapseWhitespace": true,"minifyCSS": false,"removeEmptyAttributes": true}""",
         ),
         "_mjml": attr.label(
             cfg = "exec",
