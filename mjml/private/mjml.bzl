@@ -2,7 +2,6 @@
 
 load("@aspect_bazel_lib//lib:copy_to_bin.bzl", "COPY_FILE_TO_BIN_TOOLCHAINS", "copy_files_to_bin_actions")
 load("@bazel_skylib//lib:paths.bzl", "paths")
-load("@bazel_skylib//lib:shell.bzl", "shell")
 
 MjmlInfo = provider("Provider for MJML", fields = ["files"])
 
@@ -44,7 +43,7 @@ def _mjml_binary_impl(ctx):
         opts.add("--config.minify", True)
         opts.add("--config.beautify", False)
         opts.add("--config.keepComments", False)
-        opts.add("--config.minifyOptions", shell.quote(ctx.attr.minify_options))
+        opts.add("--config.minifyOptions", ctx.attr.minify_options)
     else:
         opts.add("--config.minify", False)
         opts.add("--config.beautify", True)
