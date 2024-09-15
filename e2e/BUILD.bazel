@@ -1,5 +1,5 @@
-load("@rules_mjml//mjml:defs.bzl", "mjml_binary")
 load("@bazel_skylib//rules:diff_test.bzl", "diff_test")
+load("@rules_mjml//mjml:defs.bzl", "mjml_binary")
 
 mjml_binary(
     name = "simple",

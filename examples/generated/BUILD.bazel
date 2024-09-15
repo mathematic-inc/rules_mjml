@@ -1,5 +1,5 @@
-load("//mjml:defs.bzl", "mjml_binary")
 load("@bazel_skylib//rules:write_file.bzl", "write_file")
+load("//mjml:defs.bzl", "mjml_binary")
 
 package(default_applicable_licenses = ["//:license"])
 
