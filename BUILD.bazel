@@ -5,10 +5,6 @@ package(default_applicable_licenses = [":license"])
 
 npm_link_all_packages()
 
-exports_files([
-    ".nvmrc",
-])
-
 license(
     name = "license",
     license_kinds = [
@@ -21,7 +17,6 @@ filegroup(
     name = "distro",
     srcs = [
         ".bazelignore",
-        ".nvmrc",
         "BUILD.bazel",
         "LICENSE",
         "MODULE.bazel",

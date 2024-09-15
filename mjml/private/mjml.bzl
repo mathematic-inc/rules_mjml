@@ -1,8 +1,8 @@
 """Defines a Bazel rule for building MJML documents"""
 
+load("@aspect_bazel_lib//lib:copy_to_bin.bzl", "COPY_FILE_TO_BIN_TOOLCHAINS", "copy_files_to_bin_actions")
 load("@bazel_skylib//lib:paths.bzl", "paths")
 load("@bazel_skylib//lib:shell.bzl", "shell")
-load("@aspect_bazel_lib//lib:copy_to_bin.bzl", "COPY_FILE_TO_BIN_TOOLCHAINS", "copy_files_to_bin_actions")
 
 MjmlInfo = provider("Provider for MJML", fields = ["files"])
 
@@ -100,7 +100,7 @@ mjml_binary = rule(
         ),
         "minify_options": attr.string(
             doc = "Options for minifying output. See [html-minifier](https://github.com/kangax/html-minifier) for options.",
-            default = """{"collapseWhitespace": true,"minifyCSS": false,"removeEmptyAttributes": true}""",
+            default = """{"collapseWhitespace":true,"minifyCSS":false,"removeEmptyAttributes":true}""",
         ),
         "_mjml": attr.label(
             cfg = "exec",
