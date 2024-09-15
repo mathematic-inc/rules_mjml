@@ -17,6 +17,7 @@ filegroup(
     name = "distro",
     srcs = [
         ".bazelignore",
+        ".nvmrc",
         "BUILD.bazel",
         "LICENSE",
         "MODULE.bazel",
