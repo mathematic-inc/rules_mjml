@@ -702,7 +702,7 @@
     "@@rules_nodejs~//nodejs:extensions.bzl%node": {
       "general": {
         "bzlTransitiveDigest": "0IJr1Jg3Dns9QKY65MtauFLtHjjP3n1DgN0+ZAjFYXo=",
-        "usagesDigest": "lXHq2RyA8xdiVQqKtH9bUsmUmxM4MG+n9lBHLFLLvXE=",
+        "usagesDigest": "EN/X96GVKqWUbyVD1Hah6wOd6fmTvSHQKxMXIXJgZnU=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -724,7 +724,6 @@
                 "https://nodejs.org/dist/v{version}/{filename}"
               ],
               "node_version": "18.20.3",
-              "node_version_from_nvmrc": "@@rules_mjml~//:.nvmrc",
               "include_headers": false,
               "platform": "linux_s390x"
             }
@@ -739,7 +738,6 @@
                 "https://nodejs.org/dist/v{version}/{filename}"
               ],
               "node_version": "18.20.3",
-              "node_version_from_nvmrc": "@@rules_mjml~//:.nvmrc",
               "include_headers": false,
               "platform": "windows_amd64"
             }
@@ -761,7 +759,6 @@
                 "https://nodejs.org/dist/v{version}/{filename}"
               ],
               "node_version": "18.20.3",
-              "node_version_from_nvmrc": "@@rules_mjml~//:.nvmrc",
               "include_headers": false,
               "platform": "linux_amd64"
             }
@@ -776,7 +773,6 @@
                 "https://nodejs.org/dist/v{version}/{filename}"
               ],
               "node_version": "18.20.3",
-              "node_version_from_nvmrc": "@@rules_mjml~//:.nvmrc",
               "include_headers": false,
               "platform": "linux_ppc64le"
             }
@@ -791,7 +787,6 @@
                 "https://nodejs.org/dist/v{version}/{filename}"
               ],
               "node_version": "18.20.3",
-              "node_version_from_nvmrc": "@@rules_mjml~//:.nvmrc",
               "include_headers": false,
               "platform": "darwin_amd64"
             }
@@ -806,7 +801,6 @@
                 "https://nodejs.org/dist/v{version}/{filename}"
               ],
               "node_version": "18.20.3",
-              "node_version_from_nvmrc": "@@rules_mjml~//:.nvmrc",
               "include_headers": false,
               "platform": "linux_arm64"
             }
@@ -828,7 +822,6 @@
                 "https://nodejs.org/dist/v{version}/{filename}"
               ],
               "node_version": "18.20.3",
-              "node_version_from_nvmrc": "@@rules_mjml~//:.nvmrc",
               "include_headers": false,
               "platform": "darwin_arm64"
             }

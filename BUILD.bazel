@@ -21,6 +21,7 @@ filegroup(
         "LICENSE",
         "MODULE.bazel",
         "WORKSPACE",
+        "package.json",
         "pnpm-lock.yaml",
     ],
     visibility = ["//distro:__pkg__"],
