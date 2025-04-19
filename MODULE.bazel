@@ -1,6 +1,6 @@
 """Bazel rules for MJML."""
 
-module(name = "rules_mjml", version = "0.2.4")
+module(name = "rules_mjml", version = "0.2.5")
 
 bazel_dep(name = "aspect_bazel_lib", version = "2.14.0")
 bazel_dep(name = "aspect_rules_js", version = "2.3.5")
