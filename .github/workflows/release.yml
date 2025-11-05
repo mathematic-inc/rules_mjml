@@ -20,7 +20,7 @@ jobs:
 
       - name: Check release
         id: release
-        uses: google-github-actions/release-please-action@v4
+        uses: googleapis/release-please-action@v4
         with:
           skip-github-pull-request: true
           config-file: .github/release-please-config.json
